@@ -1,0 +1,149 @@
+.home-container {
+    display: grid;
+    
+    padding: 0rem 2rem;
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+ .wrapper {
+  display: flex;
+  
+  align-items: baseline;
+  justify-content: center;
+  position: relative;
+ }
+
+ .wrapper > img {
+  width: 30rem;
+  position: absolute;
+  bottom: 0;
+ }
+ .blueCircle>img {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  z-index: -99;
+  /* position: absolute; */
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background: linear-gradient(135.74deg, #0bb5ff 14.09%, #6dd3fe 83.81%);
+ }
+
+ .cart2 {
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+ }
+ .cart2>svg{
+  width: 30px;
+  height: 30px;
+  /* background: white; */
+  padding: 10px;
+  border-radius: 50%;
+  border: 6px solid var(--black);
+ }
+ .signup{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  /* background: white; */
+  padding: 10px;
+  font-size: 0.8rem;
+  border-radius: 15px;
+  box-shadow: var(--shadow1);
+ }
+
+
+
+
+
+
+
+
+
+
+
+ .h_sides{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+ }
+
+ .text1{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    width: min-content;
+    display: block;
+    font-weight: 600;
+ }
+ .text2{
+   display: flex;
+   flex-direction: column;
+   width: min-content;
+    
+  }
+.text2>:first-child{
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+.text2>:nth-child(2){
+   display: block;
+}
+
+.traffic {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.traffic>:first-child{
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+
+.customers{
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.customers>:first-child{
+  font-weight: 800;
+  text-align: right;
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .home-container {
+    grid-template-columns: 1fr;
+    padding: 0rem 1rem;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .wrapper > img {
+    width: 50%;
+    height: auto;
+    max-width: 50px;
+    margin: auto;
+  }
+
+  .cart2 {
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+    justify-content: center;
+  }
+  .h_sides{
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+}

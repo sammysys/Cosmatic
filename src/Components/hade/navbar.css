@@ -1,0 +1,117 @@
+/* Navbar.css */
+.navbar {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: none;
+}
+
+.logo img {
+  height: 30px;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  
+}
+
+.menu a {
+  margin-right: 10px;
+  text-decoration: none;
+  
+}
+
+.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark .menu a {
+  color: #fff;
+}
+
+.dark-mode-btn {
+  padding: 0;
+  background-color: none;
+  color: #333;
+  
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.burger-menu {
+  display: none;
+  position: relative;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  color: rgb(208, 63, 63);
+  
+  border: none;
+  z-index: 100;
+}
+
+.bar {
+  width: 100%;
+  height: 2px;
+  margin-bottom: 5px;
+  background-color: #d9cfcf;
+  transition: transform 0.3s;
+  color: #d2c4c4;
+}
+
+.open {
+  transform: rotate(-45deg);
+}
+
+/* .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(219, 208, 208, 0.5);
+  z-index: 99;
+  display: none;
+} */
+
+.menu.show {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  background-color: gray;
+  padding: 10px;
+  border-radius: 4px;
+  z-index: 101;
+}
+
+.menu.show a {
+  color: #6e1212;
+}
+
+
+/* navbar.css */
+
+/* Your existing CSS styles */
+
+@media only screen and (max-width: 768px) {
+  /* Styles for small and medium screens */
+  .menu {
+    display: none;
+  }
+  
+  .burger-menu {
+    display: flex;
+  }
+  
+  .burger-menu .bar {
+    display: block;
+  }
+}

@@ -1,0 +1,38 @@
+/* Footer.css */
+
+.footer {
+  color: var(--black);
+  padding: 20px;
+  text-align: center;
+}
+
+.footer.dark {
+  background-color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.footer.dark p {
+  color: #fff;
+}
+
+a{
+  padding: 0.5rem;
+}
+
+a:hover{
+  color: rgb(145, 145, 65);
+}
+
+.social-icons{
+  padding: 1rem;
+}
